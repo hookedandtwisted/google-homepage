@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<style>
+	
+	html {
+		height: 100%;
+		min-height: 100%; 
+	}
+	#navbar {
+		display: grid;
+		grid-template-columns: 75px 75px 1fr 75px 75px 75px 100px;
+		grid-template-rows: 50px;
+		grid-template-areas: 
+		"about store . gmail images apps sign-in";
+	}
+	#about {
+		grid-area: about;
+		justify-self: center;
+		align-self: center;
+	}
+	#store{
+		grid-area: store;
+		justify-self: center;
+		align-self: center;
+	}
+	#gmail{
+		grid-area: gmail;
+		justify-self: center;
+		align-self: center;
+	}
+	#images{
+		grid-area: images;
+		justify-self: center;
+		align-self: center;
+
+	}
+	#apps {
+		grid-area: apps;
+		justify-self: center;
+		align-self: center;
+
+	}
+	#sign-in{
+		grid-area: sign-in;
+		justify-self: center;
+		align-self: center;
+		background-color: rgb(75, 131, 235);
+		color: white;
+		font-weight: bold;
+		border-radius: 5px;
+		width: 100px;
+		height: 35px;
+		box-shadow: white;
+		border-color: rgb(75, 131, 235);
+	}
+
+	/*Main Content*/
+	#main {
+		min-height: 100%;
+		display: grid;
+		grid-template-columns: 1fr 400px 1fr;
+		grid-template-rows: 250px 70px 70px 250px;
+		grid-template-areas: 
+		". logo ."
+		". search ."
+		". flexbox  ."
+		". googletext .";
+	}
+
+	#logo {
+		grid-area: logo;
+		justify-self: center;
+		align-self: end;
+	}
+
+	#search {
+		grid-area: search;
+		justify-self: center;
+		align-self: center;
+		height: 30px;
+		width: 100%;
+		border-radius: 25px;
+	}
+
+	#flexbox{
+		display: flexbox;
+		grid-area: flexbox;
+		justify-self: center;
+		align-self: center;
+	}
+	#searchbtn {
+	}
+
+	#luckybtn {
+	}
+
+	#googletext{
+		grid-area: googletext;
+		justify-self: center;
+		align-self: initial;
+	}
+
+	div {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	a p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #474747;
+	}
+	a:link {
+		text-decoration: none;
+	}
+	a:visited {
+		text-decoration: none;
+		color: #474747;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+	a:active{
+		text-decoration: underline;
+	}
+	/*Footer Content style*/
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		font-family: Arial, Helvetica, sans-serif;
+		display: grid;
+		grid-template-columns: 100px 100px 150px 1fr 100px 100px 100px;
+		grid-template-rows: 50px;
+		grid-template-areas: 
+		"advertising business hsw . privacy terms settings";
+		background-color: rgb(236, 230, 230);
+	}
+	#advertising {
+		grid-area: advertising;
+		justify-self: center;
+		align-self: center;
+	}
+	#business {
+		grid-area: business;
+		justify-self: center;
+		align-self: center;
+	}
+	#hsw {
+		grid-area: hsw;
+		justify-self: center;
+		align-self: center;
+	}
+	#privacy {
+		grid-area: privacy;
+		justify-self: center;
+		align-self: center;
+	}
+	#terms {
+		grid-area: terms;
+		justify-self: center;
+		align-self: center;
+	}
+	#settings {
+		grid-area: settings;
+		justify-self: center;
+		align-self: center;
+	}
+
+
+</style>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Google</title>
+	</head>
+	<body>
+		<div>
+			<nav id="navbar">
+				<a id="about" href="#">About</a>
+				<a id="store" href="#">Store</a>
+				<a id="gmail" href="#">Gmail</a>
+				<a id="images" href="#">Images</a>
+			 	<a id="apps" href="#"><img src="../images/menu.png"></a>
+				<button id="sign-in">Sign In</button>
+			</nav>
+		</div>
+
+		<div id="main">
+			<img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">	
+			<input id="search" class="box" name="search" placeholder="Google Search" type="text">
+			<div id="flexbox">		
+				<button id="searchbtn" type="button">Google Search</button><button id="luckybtn" type="button">I'm Feeling Lucky</button>
+			</div>		
+			<p id="googletext">Google offered in: <a href="#">Francais</a></p>
+		</div>
+	</body>
+	<footer>
+			<a id="advertising" href="#">Advertising</a>
+			<a id="business" href="#">Business</a>
+			<a id="hsw" href="#">How Search Works</a>
+			<a id="privacy" href="#">Privacy</a>
+			<a id="terms" href="#">Terms</a>
+			<a id="settings" href="#">Settings</a>
+	</footer>
+</html>
